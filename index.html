@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="app.js" defer></script>
+    <title>Task Management</title>
+</head>
+
+<body>
+    Task Name: <input id="name" type="text"> 
+    category: <input id="category" type="text"> 
+    deadline: <input id="deadline" type="date"> 
+    status: <select id="status" >
+            <option value="in progress" selected>in progress</option>
+            <option value="overdue" >overdue</option>
+            <option value="completed">completed</option>
+        </select>
+    <button id="add-task">Add task</button>
+
+    <select id="filter">
+        <option value="all" selected>all</option>
+        <option value="in progress">in progress</option>
+        <option value="completed">completed</option>
+        <option value="overdue">overdue</option>
+    </select>
+    <ul id="my-task-list"></ul>
+
+
+
+</body>
+
+</html>
